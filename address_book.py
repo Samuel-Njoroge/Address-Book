@@ -8,9 +8,9 @@ root.config(bg = 'SlateGray3')
 root.title('DataFlair-AddressBook')
 root.resizable(0,0)
 contactlist = [
-    ['Parv Maheswari',  '0176738493'],
+    ['Sam Njoroge',  '0176738493'],
     ['David Sharma',  '2684430000'],
-    ['Mandish Kabra',   '4338354432'],
+    ['Man Kabra',   '4338354432'],
     ['Prisha Modi','6834552341'],
     ['Rahul kaushik',   '1234852689'],
     ['Johena Shaa' , '2119876543'],
@@ -31,7 +31,7 @@ scroll.pack(side=RIGHT, fill=Y)
 select.pack(side=LEFT,  fill=BOTH, expand=1)
 
 
-########### function to get select value
+# function to get select value
 
 def Selected():
     return int(select.curselection()[0])
@@ -58,7 +58,7 @@ def VIEW():
     Number.set(PHONE)
 
 
-###exit game window   
+# exit game window   
 def EXIT():
     root.destroy()
 
@@ -77,7 +77,7 @@ Select_set()
 
 
 
-######define buttons #####labels and entry widget
+#define buttons labels and entry widget
 Label(root, text = 'NAME', font='arial 12 bold', bg = 'SlateGray3').place(x= 30, y=20)
 Entry(root, textvariable = Name).place(x= 100, y=20)
 Label(root, text = 'PHONE NO.', font='arial 12 bold',bg = 'SlateGray3').place(x= 30, y=70)
